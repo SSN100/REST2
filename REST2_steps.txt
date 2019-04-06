@@ -1,0 +1,6 @@
+1. Run 
+	gmx_mpi grompp -f NVT.mdp -c <conf>.gro -p topol.top -pp processed.top
+   to get processed.top.
+	Then modify the atom name of only solute in [atom] section of processed.top file with putting a undersocre (_) at the end, like CA will become CA_. (plumed recognise the atom name followed by underscore as solute.)
+2.  Then run steps-to-REST2-2.s
+
